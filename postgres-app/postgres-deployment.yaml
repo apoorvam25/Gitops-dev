@@ -1,0 +1,31 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: postgres-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: postgres
+  template:
+    metadata:
+      labels:
+        app: postgres
+    spec:
+      containers:
+        - name: postgres
+          image: postgres:13 # A standard PostgreSQL image
+          ports:
+            - containerPort: 5432
+          env:
+            - name: POSTGRES_USER
+              value: postgres # Simple auth for this test
+            - name: POSTGRES_PASSWORD
+              value: mysecretpassword
+          volumeMounts: # <-- This is where we mount the storage
+            - name: postgres-storage
+              mountPath: /var/lib/postgresql/data
+      volumes: # <-- This tells the pod to use the PVC
+        - name: postgres-storage
+          persistentVolumeClaim:
+            claimName: postgres-pvc # This MUST match the PVC name
