@@ -2,6 +2,6 @@ apiVersion: v1
 kind: ConfigMap
 metadata:
   name: test-cm-8502
-  namespace: load-test-L
+  namespace: load-test-l
 data:
   key: "value-8502"

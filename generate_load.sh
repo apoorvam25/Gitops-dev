@@ -1,17 +1,21 @@
 #!/bin/bash
-#!/bin/bash
 # Usage: ./generate_load.sh <scale> <directory>
 # Scale options: S, M, L
 
 SCALE=$1
 DIR=$2
+
+NS_SUFFIX=$(echo "$SCALE" | tr '[:upper:]' '[:lower:]')
+NAMESPACE="load-test-$NS_SUFFIX"
+
 mkdir -p $DIR
 
+# Logic checks still use the uppercase input
 if [ "$SCALE" == "S" ]; then CM=100; SEC=100; DEP=20; fi
 if [ "$SCALE" == "M" ]; then CM=1000; SEC=1000; DEP=200; fi
 if [ "$SCALE" == "L" ]; then CM=10000; SEC=10000; DEP=2000; fi
 
-echo "Generating $SCALE load: $CM CMs, $SEC Secrets, $DEP Deployments..."
+echo "Generating $SCALE load in namespace '$NAMESPACE': $CM CMs, $SEC Secrets, $DEP Deployments..."
 
 # Generate ConfigMaps
 for i in $(seq 1 $CM); do
@@ -20,7 +24,7 @@ apiVersion: v1
 kind: ConfigMap
 metadata:
   name: test-cm-$i
-  namespace: load-test-$SCALE
+  namespace: $NAMESPACE
 data:
   key: "value-$i"
 EOF
@@ -33,7 +37,7 @@ apiVersion: v1
 kind: Secret
 metadata:
   name: test-sec-$i
-  namespace: load-test-$SCALE
+  namespace: $NAMESPACE
 type: Opaque
 stringData:
   key: "value-$i"
@@ -47,7 +51,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: test-dep-$i
-  namespace: load-test-$SCALE
+  namespace: $NAMESPACE
 spec:
   replicas: 0
   selector:
@@ -60,6 +64,6 @@ spec:
     spec:
       containers:
       - name: pause
-        image: k8s.gcr.io/pause:3.2
+        image: registry.k8s.io/pause:3.9
 EOF
 done

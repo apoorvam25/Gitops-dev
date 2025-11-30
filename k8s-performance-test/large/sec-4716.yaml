@@ -2,7 +2,7 @@ apiVersion: v1
 kind: Secret
 metadata:
   name: test-sec-4716
-  namespace: load-test-L
+  namespace: load-test-l
 type: Opaque
 stringData:
   key: "value-4716"
