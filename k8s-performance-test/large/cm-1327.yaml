@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: test-cm-1327
+  namespace: load-test-L
+data:
+  key: "value-1327"

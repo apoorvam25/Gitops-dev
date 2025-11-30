@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: Secret
+metadata:
+  name: test-sec-8473
+  namespace: load-test-L
+type: Opaque
+stringData:
+  key: "value-8473"

@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: test-cm-387
+  namespace: load-test-M
+data:
+  key: "value-387"

@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: test-dep-723
+  namespace: load-test-L
+spec:
+  replicas: 0
+  selector:
+    matchLabels:
+      app: test-723
+  template:
+    metadata:
+      labels:
+        app: test-723
+    spec:
+      containers:
+      - name: pause
+        image: k8s.gcr.io/pause:3.2

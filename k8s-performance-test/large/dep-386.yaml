@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: test-dep-386
+  namespace: load-test-L
+spec:
+  replicas: 0
+  selector:
+    matchLabels:
+      app: test-386
+  template:
+    metadata:
+      labels:
+        app: test-386
+    spec:
+      containers:
+      - name: pause
+        image: k8s.gcr.io/pause:3.2

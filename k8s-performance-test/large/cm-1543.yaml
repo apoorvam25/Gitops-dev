@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: test-cm-1543
+  namespace: load-test-L
+data:
+  key: "value-1543"

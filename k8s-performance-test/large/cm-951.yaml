@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: test-cm-951
+  namespace: load-test-L
+data:
+  key: "value-951"

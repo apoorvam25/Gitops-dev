@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: test-cm-2023
+  namespace: load-test-L
+data:
+  key: "value-2023"

@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: test-dep-299
+  namespace: load-test-L
+spec:
+  replicas: 0
+  selector:
+    matchLabels:
+      app: test-299
+  template:
+    metadata:
+      labels:
+        app: test-299
+    spec:
+      containers:
+      - name: pause
+        image: k8s.gcr.io/pause:3.2

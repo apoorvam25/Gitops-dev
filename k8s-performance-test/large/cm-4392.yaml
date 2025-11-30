@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: test-cm-4392
+  namespace: load-test-L
+data:
+  key: "value-4392"

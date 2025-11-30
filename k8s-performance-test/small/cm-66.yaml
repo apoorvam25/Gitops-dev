@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: test-cm-66
+  namespace: load-test-S
+data:
+  key: "value-66"

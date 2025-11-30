@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: Secret
+metadata:
+  name: test-sec-26
+  namespace: load-test-M
+type: Opaque
+stringData:
+  key: "value-26"
