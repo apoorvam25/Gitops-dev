@@ -1,0 +1,1900 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: test-dep-301
+  namespace: load-test-l
+spec:
+  replicas: 0
+  selector:
+    matchLabels:
+      app: test-301
+  template:
+    metadata:
+      labels:
+        app: test-301
+    spec:
+      containers:
+      - name: pause
+        image: registry.k8s.io/pause:3.9
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: test-dep-302
+  namespace: load-test-l
+spec:
+  replicas: 0
+  selector:
+    matchLabels:
+      app: test-302
+  template:
+    metadata:
+      labels:
+        app: test-302
+    spec:
+      containers:
+      - name: pause
+        image: registry.k8s.io/pause:3.9
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: test-dep-303
+  namespace: load-test-l
+spec:
+  replicas: 0
+  selector:
+    matchLabels:
+      app: test-303
+  template:
+    metadata:
+      labels:
+        app: test-303
+    spec:
+      containers:
+      - name: pause
+        image: registry.k8s.io/pause:3.9
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: test-dep-304
+  namespace: load-test-l
+spec:
+  replicas: 0
+  selector:
+    matchLabels:
+      app: test-304
+  template:
+    metadata:
+      labels:
+        app: test-304
+    spec:
+      containers:
+      - name: pause
+        image: registry.k8s.io/pause:3.9
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: test-dep-305
+  namespace: load-test-l
+spec:
+  replicas: 0
+  selector:
+    matchLabels:
+      app: test-305
+  template:
+    metadata:
+      labels:
+        app: test-305
+    spec:
+      containers:
+      - name: pause
+        image: registry.k8s.io/pause:3.9
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: test-dep-306
+  namespace: load-test-l
+spec:
+  replicas: 0
+  selector:
+    matchLabels:
+      app: test-306
+  template:
+    metadata:
+      labels:
+        app: test-306
+    spec:
+      containers:
+      - name: pause
+        image: registry.k8s.io/pause:3.9
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: test-dep-307
+  namespace: load-test-l
+spec:
+  replicas: 0
+  selector:
+    matchLabels:
+      app: test-307
+  template:
+    metadata:
+      labels:
+        app: test-307
+    spec:
+      containers:
+      - name: pause
+        image: registry.k8s.io/pause:3.9
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: test-dep-308
+  namespace: load-test-l
+spec:
+  replicas: 0
+  selector:
+    matchLabels:
+      app: test-308
+  template:
+    metadata:
+      labels:
+        app: test-308
+    spec:
+      containers:
+      - name: pause
+        image: registry.k8s.io/pause:3.9
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: test-dep-309
+  namespace: load-test-l
+spec:
+  replicas: 0
+  selector:
+    matchLabels:
+      app: test-309
+  template:
+    metadata:
+      labels:
+        app: test-309
+    spec:
+      containers:
+      - name: pause
+        image: registry.k8s.io/pause:3.9
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: test-dep-310
+  namespace: load-test-l
+spec:
+  replicas: 0
+  selector:
+    matchLabels:
+      app: test-310
+  template:
+    metadata:
+      labels:
+        app: test-310
+    spec:
+      containers:
+      - name: pause
+        image: registry.k8s.io/pause:3.9
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: test-dep-311
+  namespace: load-test-l
+spec:
+  replicas: 0
+  selector:
+    matchLabels:
+      app: test-311
+  template:
+    metadata:
+      labels:
+        app: test-311
+    spec:
+      containers:
+      - name: pause
+        image: registry.k8s.io/pause:3.9
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: test-dep-312
+  namespace: load-test-l
+spec:
+  replicas: 0
+  selector:
+    matchLabels:
+      app: test-312
+  template:
+    metadata:
+      labels:
+        app: test-312
+    spec:
+      containers:
+      - name: pause
+        image: registry.k8s.io/pause:3.9
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: test-dep-313
+  namespace: load-test-l
+spec:
+  replicas: 0
+  selector:
+    matchLabels:
+      app: test-313
+  template:
+    metadata:
+      labels:
+        app: test-313
+    spec:
+      containers:
+      - name: pause
+        image: registry.k8s.io/pause:3.9
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: test-dep-314
+  namespace: load-test-l
+spec:
+  replicas: 0
+  selector:
+    matchLabels:
+      app: test-314
+  template:
+    metadata:
+      labels:
+        app: test-314
+    spec:
+      containers:
+      - name: pause
+        image: registry.k8s.io/pause:3.9
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: test-dep-315
+  namespace: load-test-l
+spec:
+  replicas: 0
+  selector:
+    matchLabels:
+      app: test-315
+  template:
+    metadata:
+      labels:
+        app: test-315
+    spec:
+      containers:
+      - name: pause
+        image: registry.k8s.io/pause:3.9
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: test-dep-316
+  namespace: load-test-l
+spec:
+  replicas: 0
+  selector:
+    matchLabels:
+      app: test-316
+  template:
+    metadata:
+      labels:
+        app: test-316
+    spec:
+      containers:
+      - name: pause
+        image: registry.k8s.io/pause:3.9
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: test-dep-317
+  namespace: load-test-l
+spec:
+  replicas: 0
+  selector:
+    matchLabels:
+      app: test-317
+  template:
+    metadata:
+      labels:
+        app: test-317
+    spec:
+      containers:
+      - name: pause
+        image: registry.k8s.io/pause:3.9
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: test-dep-318
+  namespace: load-test-l
+spec:
+  replicas: 0
+  selector:
+    matchLabels:
+      app: test-318
+  template:
+    metadata:
+      labels:
+        app: test-318
+    spec:
+      containers:
+      - name: pause
+        image: registry.k8s.io/pause:3.9
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: test-dep-319
+  namespace: load-test-l
+spec:
+  replicas: 0
+  selector:
+    matchLabels:
+      app: test-319
+  template:
+    metadata:
+      labels:
+        app: test-319
+    spec:
+      containers:
+      - name: pause
+        image: registry.k8s.io/pause:3.9
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: test-dep-320
+  namespace: load-test-l
+spec:
+  replicas: 0
+  selector:
+    matchLabels:
+      app: test-320
+  template:
+    metadata:
+      labels:
+        app: test-320
+    spec:
+      containers:
+      - name: pause
+        image: registry.k8s.io/pause:3.9
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: test-dep-321
+  namespace: load-test-l
+spec:
+  replicas: 0
+  selector:
+    matchLabels:
+      app: test-321
+  template:
+    metadata:
+      labels:
+        app: test-321
+    spec:
+      containers:
+      - name: pause
+        image: registry.k8s.io/pause:3.9
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: test-dep-322
+  namespace: load-test-l
+spec:
+  replicas: 0
+  selector:
+    matchLabels:
+      app: test-322
+  template:
+    metadata:
+      labels:
+        app: test-322
+    spec:
+      containers:
+      - name: pause
+        image: registry.k8s.io/pause:3.9
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: test-dep-323
+  namespace: load-test-l
+spec:
+  replicas: 0
+  selector:
+    matchLabels:
+      app: test-323
+  template:
+    metadata:
+      labels:
+        app: test-323
+    spec:
+      containers:
+      - name: pause
+        image: registry.k8s.io/pause:3.9
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: test-dep-324
+  namespace: load-test-l
+spec:
+  replicas: 0
+  selector:
+    matchLabels:
+      app: test-324
+  template:
+    metadata:
+      labels:
+        app: test-324
+    spec:
+      containers:
+      - name: pause
+        image: registry.k8s.io/pause:3.9
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: test-dep-325
+  namespace: load-test-l
+spec:
+  replicas: 0
+  selector:
+    matchLabels:
+      app: test-325
+  template:
+    metadata:
+      labels:
+        app: test-325
+    spec:
+      containers:
+      - name: pause
+        image: registry.k8s.io/pause:3.9
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: test-dep-326
+  namespace: load-test-l
+spec:
+  replicas: 0
+  selector:
+    matchLabels:
+      app: test-326
+  template:
+    metadata:
+      labels:
+        app: test-326
+    spec:
+      containers:
+      - name: pause
+        image: registry.k8s.io/pause:3.9
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: test-dep-327
+  namespace: load-test-l
+spec:
+  replicas: 0
+  selector:
+    matchLabels:
+      app: test-327
+  template:
+    metadata:
+      labels:
+        app: test-327
+    spec:
+      containers:
+      - name: pause
+        image: registry.k8s.io/pause:3.9
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: test-dep-328
+  namespace: load-test-l
+spec:
+  replicas: 0
+  selector:
+    matchLabels:
+      app: test-328
+  template:
+    metadata:
+      labels:
+        app: test-328
+    spec:
+      containers:
+      - name: pause
+        image: registry.k8s.io/pause:3.9
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: test-dep-329
+  namespace: load-test-l
+spec:
+  replicas: 0
+  selector:
+    matchLabels:
+      app: test-329
+  template:
+    metadata:
+      labels:
+        app: test-329
+    spec:
+      containers:
+      - name: pause
+        image: registry.k8s.io/pause:3.9
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: test-dep-330
+  namespace: load-test-l
+spec:
+  replicas: 0
+  selector:
+    matchLabels:
+      app: test-330
+  template:
+    metadata:
+      labels:
+        app: test-330
+    spec:
+      containers:
+      - name: pause
+        image: registry.k8s.io/pause:3.9
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: test-dep-331
+  namespace: load-test-l
+spec:
+  replicas: 0
+  selector:
+    matchLabels:
+      app: test-331
+  template:
+    metadata:
+      labels:
+        app: test-331
+    spec:
+      containers:
+      - name: pause
+        image: registry.k8s.io/pause:3.9
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: test-dep-332
+  namespace: load-test-l
+spec:
+  replicas: 0
+  selector:
+    matchLabels:
+      app: test-332
+  template:
+    metadata:
+      labels:
+        app: test-332
+    spec:
+      containers:
+      - name: pause
+        image: registry.k8s.io/pause:3.9
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: test-dep-333
+  namespace: load-test-l
+spec:
+  replicas: 0
+  selector:
+    matchLabels:
+      app: test-333
+  template:
+    metadata:
+      labels:
+        app: test-333
+    spec:
+      containers:
+      - name: pause
+        image: registry.k8s.io/pause:3.9
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: test-dep-334
+  namespace: load-test-l
+spec:
+  replicas: 0
+  selector:
+    matchLabels:
+      app: test-334
+  template:
+    metadata:
+      labels:
+        app: test-334
+    spec:
+      containers:
+      - name: pause
+        image: registry.k8s.io/pause:3.9
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: test-dep-335
+  namespace: load-test-l
+spec:
+  replicas: 0
+  selector:
+    matchLabels:
+      app: test-335
+  template:
+    metadata:
+      labels:
+        app: test-335
+    spec:
+      containers:
+      - name: pause
+        image: registry.k8s.io/pause:3.9
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: test-dep-336
+  namespace: load-test-l
+spec:
+  replicas: 0
+  selector:
+    matchLabels:
+      app: test-336
+  template:
+    metadata:
+      labels:
+        app: test-336
+    spec:
+      containers:
+      - name: pause
+        image: registry.k8s.io/pause:3.9
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: test-dep-337
+  namespace: load-test-l
+spec:
+  replicas: 0
+  selector:
+    matchLabels:
+      app: test-337
+  template:
+    metadata:
+      labels:
+        app: test-337
+    spec:
+      containers:
+      - name: pause
+        image: registry.k8s.io/pause:3.9
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: test-dep-338
+  namespace: load-test-l
+spec:
+  replicas: 0
+  selector:
+    matchLabels:
+      app: test-338
+  template:
+    metadata:
+      labels:
+        app: test-338
+    spec:
+      containers:
+      - name: pause
+        image: registry.k8s.io/pause:3.9
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: test-dep-339
+  namespace: load-test-l
+spec:
+  replicas: 0
+  selector:
+    matchLabels:
+      app: test-339
+  template:
+    metadata:
+      labels:
+        app: test-339
+    spec:
+      containers:
+      - name: pause
+        image: registry.k8s.io/pause:3.9
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: test-dep-340
+  namespace: load-test-l
+spec:
+  replicas: 0
+  selector:
+    matchLabels:
+      app: test-340
+  template:
+    metadata:
+      labels:
+        app: test-340
+    spec:
+      containers:
+      - name: pause
+        image: registry.k8s.io/pause:3.9
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: test-dep-341
+  namespace: load-test-l
+spec:
+  replicas: 0
+  selector:
+    matchLabels:
+      app: test-341
+  template:
+    metadata:
+      labels:
+        app: test-341
+    spec:
+      containers:
+      - name: pause
+        image: registry.k8s.io/pause:3.9
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: test-dep-342
+  namespace: load-test-l
+spec:
+  replicas: 0
+  selector:
+    matchLabels:
+      app: test-342
+  template:
+    metadata:
+      labels:
+        app: test-342
+    spec:
+      containers:
+      - name: pause
+        image: registry.k8s.io/pause:3.9
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: test-dep-343
+  namespace: load-test-l
+spec:
+  replicas: 0
+  selector:
+    matchLabels:
+      app: test-343
+  template:
+    metadata:
+      labels:
+        app: test-343
+    spec:
+      containers:
+      - name: pause
+        image: registry.k8s.io/pause:3.9
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: test-dep-344
+  namespace: load-test-l
+spec:
+  replicas: 0
+  selector:
+    matchLabels:
+      app: test-344
+  template:
+    metadata:
+      labels:
+        app: test-344
+    spec:
+      containers:
+      - name: pause
+        image: registry.k8s.io/pause:3.9
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: test-dep-345
+  namespace: load-test-l
+spec:
+  replicas: 0
+  selector:
+    matchLabels:
+      app: test-345
+  template:
+    metadata:
+      labels:
+        app: test-345
+    spec:
+      containers:
+      - name: pause
+        image: registry.k8s.io/pause:3.9
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: test-dep-346
+  namespace: load-test-l
+spec:
+  replicas: 0
+  selector:
+    matchLabels:
+      app: test-346
+  template:
+    metadata:
+      labels:
+        app: test-346
+    spec:
+      containers:
+      - name: pause
+        image: registry.k8s.io/pause:3.9
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: test-dep-347
+  namespace: load-test-l
+spec:
+  replicas: 0
+  selector:
+    matchLabels:
+      app: test-347
+  template:
+    metadata:
+      labels:
+        app: test-347
+    spec:
+      containers:
+      - name: pause
+        image: registry.k8s.io/pause:3.9
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: test-dep-348
+  namespace: load-test-l
+spec:
+  replicas: 0
+  selector:
+    matchLabels:
+      app: test-348
+  template:
+    metadata:
+      labels:
+        app: test-348
+    spec:
+      containers:
+      - name: pause
+        image: registry.k8s.io/pause:3.9
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: test-dep-349
+  namespace: load-test-l
+spec:
+  replicas: 0
+  selector:
+    matchLabels:
+      app: test-349
+  template:
+    metadata:
+      labels:
+        app: test-349
+    spec:
+      containers:
+      - name: pause
+        image: registry.k8s.io/pause:3.9
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: test-dep-350
+  namespace: load-test-l
+spec:
+  replicas: 0
+  selector:
+    matchLabels:
+      app: test-350
+  template:
+    metadata:
+      labels:
+        app: test-350
+    spec:
+      containers:
+      - name: pause
+        image: registry.k8s.io/pause:3.9
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: test-dep-351
+  namespace: load-test-l
+spec:
+  replicas: 0
+  selector:
+    matchLabels:
+      app: test-351
+  template:
+    metadata:
+      labels:
+        app: test-351
+    spec:
+      containers:
+      - name: pause
+        image: registry.k8s.io/pause:3.9
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: test-dep-352
+  namespace: load-test-l
+spec:
+  replicas: 0
+  selector:
+    matchLabels:
+      app: test-352
+  template:
+    metadata:
+      labels:
+        app: test-352
+    spec:
+      containers:
+      - name: pause
+        image: registry.k8s.io/pause:3.9
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: test-dep-353
+  namespace: load-test-l
+spec:
+  replicas: 0
+  selector:
+    matchLabels:
+      app: test-353
+  template:
+    metadata:
+      labels:
+        app: test-353
+    spec:
+      containers:
+      - name: pause
+        image: registry.k8s.io/pause:3.9
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: test-dep-354
+  namespace: load-test-l
+spec:
+  replicas: 0
+  selector:
+    matchLabels:
+      app: test-354
+  template:
+    metadata:
+      labels:
+        app: test-354
+    spec:
+      containers:
+      - name: pause
+        image: registry.k8s.io/pause:3.9
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: test-dep-355
+  namespace: load-test-l
+spec:
+  replicas: 0
+  selector:
+    matchLabels:
+      app: test-355
+  template:
+    metadata:
+      labels:
+        app: test-355
+    spec:
+      containers:
+      - name: pause
+        image: registry.k8s.io/pause:3.9
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: test-dep-356
+  namespace: load-test-l
+spec:
+  replicas: 0
+  selector:
+    matchLabels:
+      app: test-356
+  template:
+    metadata:
+      labels:
+        app: test-356
+    spec:
+      containers:
+      - name: pause
+        image: registry.k8s.io/pause:3.9
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: test-dep-357
+  namespace: load-test-l
+spec:
+  replicas: 0
+  selector:
+    matchLabels:
+      app: test-357
+  template:
+    metadata:
+      labels:
+        app: test-357
+    spec:
+      containers:
+      - name: pause
+        image: registry.k8s.io/pause:3.9
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: test-dep-358
+  namespace: load-test-l
+spec:
+  replicas: 0
+  selector:
+    matchLabels:
+      app: test-358
+  template:
+    metadata:
+      labels:
+        app: test-358
+    spec:
+      containers:
+      - name: pause
+        image: registry.k8s.io/pause:3.9
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: test-dep-359
+  namespace: load-test-l
+spec:
+  replicas: 0
+  selector:
+    matchLabels:
+      app: test-359
+  template:
+    metadata:
+      labels:
+        app: test-359
+    spec:
+      containers:
+      - name: pause
+        image: registry.k8s.io/pause:3.9
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: test-dep-360
+  namespace: load-test-l
+spec:
+  replicas: 0
+  selector:
+    matchLabels:
+      app: test-360
+  template:
+    metadata:
+      labels:
+        app: test-360
+    spec:
+      containers:
+      - name: pause
+        image: registry.k8s.io/pause:3.9
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: test-dep-361
+  namespace: load-test-l
+spec:
+  replicas: 0
+  selector:
+    matchLabels:
+      app: test-361
+  template:
+    metadata:
+      labels:
+        app: test-361
+    spec:
+      containers:
+      - name: pause
+        image: registry.k8s.io/pause:3.9
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: test-dep-362
+  namespace: load-test-l
+spec:
+  replicas: 0
+  selector:
+    matchLabels:
+      app: test-362
+  template:
+    metadata:
+      labels:
+        app: test-362
+    spec:
+      containers:
+      - name: pause
+        image: registry.k8s.io/pause:3.9
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: test-dep-363
+  namespace: load-test-l
+spec:
+  replicas: 0
+  selector:
+    matchLabels:
+      app: test-363
+  template:
+    metadata:
+      labels:
+        app: test-363
+    spec:
+      containers:
+      - name: pause
+        image: registry.k8s.io/pause:3.9
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: test-dep-364
+  namespace: load-test-l
+spec:
+  replicas: 0
+  selector:
+    matchLabels:
+      app: test-364
+  template:
+    metadata:
+      labels:
+        app: test-364
+    spec:
+      containers:
+      - name: pause
+        image: registry.k8s.io/pause:3.9
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: test-dep-365
+  namespace: load-test-l
+spec:
+  replicas: 0
+  selector:
+    matchLabels:
+      app: test-365
+  template:
+    metadata:
+      labels:
+        app: test-365
+    spec:
+      containers:
+      - name: pause
+        image: registry.k8s.io/pause:3.9
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: test-dep-366
+  namespace: load-test-l
+spec:
+  replicas: 0
+  selector:
+    matchLabels:
+      app: test-366
+  template:
+    metadata:
+      labels:
+        app: test-366
+    spec:
+      containers:
+      - name: pause
+        image: registry.k8s.io/pause:3.9
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: test-dep-367
+  namespace: load-test-l
+spec:
+  replicas: 0
+  selector:
+    matchLabels:
+      app: test-367
+  template:
+    metadata:
+      labels:
+        app: test-367
+    spec:
+      containers:
+      - name: pause
+        image: registry.k8s.io/pause:3.9
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: test-dep-368
+  namespace: load-test-l
+spec:
+  replicas: 0
+  selector:
+    matchLabels:
+      app: test-368
+  template:
+    metadata:
+      labels:
+        app: test-368
+    spec:
+      containers:
+      - name: pause
+        image: registry.k8s.io/pause:3.9
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: test-dep-369
+  namespace: load-test-l
+spec:
+  replicas: 0
+  selector:
+    matchLabels:
+      app: test-369
+  template:
+    metadata:
+      labels:
+        app: test-369
+    spec:
+      containers:
+      - name: pause
+        image: registry.k8s.io/pause:3.9
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: test-dep-370
+  namespace: load-test-l
+spec:
+  replicas: 0
+  selector:
+    matchLabels:
+      app: test-370
+  template:
+    metadata:
+      labels:
+        app: test-370
+    spec:
+      containers:
+      - name: pause
+        image: registry.k8s.io/pause:3.9
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: test-dep-371
+  namespace: load-test-l
+spec:
+  replicas: 0
+  selector:
+    matchLabels:
+      app: test-371
+  template:
+    metadata:
+      labels:
+        app: test-371
+    spec:
+      containers:
+      - name: pause
+        image: registry.k8s.io/pause:3.9
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: test-dep-372
+  namespace: load-test-l
+spec:
+  replicas: 0
+  selector:
+    matchLabels:
+      app: test-372
+  template:
+    metadata:
+      labels:
+        app: test-372
+    spec:
+      containers:
+      - name: pause
+        image: registry.k8s.io/pause:3.9
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: test-dep-373
+  namespace: load-test-l
+spec:
+  replicas: 0
+  selector:
+    matchLabels:
+      app: test-373
+  template:
+    metadata:
+      labels:
+        app: test-373
+    spec:
+      containers:
+      - name: pause
+        image: registry.k8s.io/pause:3.9
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: test-dep-374
+  namespace: load-test-l
+spec:
+  replicas: 0
+  selector:
+    matchLabels:
+      app: test-374
+  template:
+    metadata:
+      labels:
+        app: test-374
+    spec:
+      containers:
+      - name: pause
+        image: registry.k8s.io/pause:3.9
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: test-dep-375
+  namespace: load-test-l
+spec:
+  replicas: 0
+  selector:
+    matchLabels:
+      app: test-375
+  template:
+    metadata:
+      labels:
+        app: test-375
+    spec:
+      containers:
+      - name: pause
+        image: registry.k8s.io/pause:3.9
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: test-dep-376
+  namespace: load-test-l
+spec:
+  replicas: 0
+  selector:
+    matchLabels:
+      app: test-376
+  template:
+    metadata:
+      labels:
+        app: test-376
+    spec:
+      containers:
+      - name: pause
+        image: registry.k8s.io/pause:3.9
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: test-dep-377
+  namespace: load-test-l
+spec:
+  replicas: 0
+  selector:
+    matchLabels:
+      app: test-377
+  template:
+    metadata:
+      labels:
+        app: test-377
+    spec:
+      containers:
+      - name: pause
+        image: registry.k8s.io/pause:3.9
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: test-dep-378
+  namespace: load-test-l
+spec:
+  replicas: 0
+  selector:
+    matchLabels:
+      app: test-378
+  template:
+    metadata:
+      labels:
+        app: test-378
+    spec:
+      containers:
+      - name: pause
+        image: registry.k8s.io/pause:3.9
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: test-dep-379
+  namespace: load-test-l
+spec:
+  replicas: 0
+  selector:
+    matchLabels:
+      app: test-379
+  template:
+    metadata:
+      labels:
+        app: test-379
+    spec:
+      containers:
+      - name: pause
+        image: registry.k8s.io/pause:3.9
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: test-dep-380
+  namespace: load-test-l
+spec:
+  replicas: 0
+  selector:
+    matchLabels:
+      app: test-380
+  template:
+    metadata:
+      labels:
+        app: test-380
+    spec:
+      containers:
+      - name: pause
+        image: registry.k8s.io/pause:3.9
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: test-dep-381
+  namespace: load-test-l
+spec:
+  replicas: 0
+  selector:
+    matchLabels:
+      app: test-381
+  template:
+    metadata:
+      labels:
+        app: test-381
+    spec:
+      containers:
+      - name: pause
+        image: registry.k8s.io/pause:3.9
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: test-dep-382
+  namespace: load-test-l
+spec:
+  replicas: 0
+  selector:
+    matchLabels:
+      app: test-382
+  template:
+    metadata:
+      labels:
+        app: test-382
+    spec:
+      containers:
+      - name: pause
+        image: registry.k8s.io/pause:3.9
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: test-dep-383
+  namespace: load-test-l
+spec:
+  replicas: 0
+  selector:
+    matchLabels:
+      app: test-383
+  template:
+    metadata:
+      labels:
+        app: test-383
+    spec:
+      containers:
+      - name: pause
+        image: registry.k8s.io/pause:3.9
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: test-dep-384
+  namespace: load-test-l
+spec:
+  replicas: 0
+  selector:
+    matchLabels:
+      app: test-384
+  template:
+    metadata:
+      labels:
+        app: test-384
+    spec:
+      containers:
+      - name: pause
+        image: registry.k8s.io/pause:3.9
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: test-dep-385
+  namespace: load-test-l
+spec:
+  replicas: 0
+  selector:
+    matchLabels:
+      app: test-385
+  template:
+    metadata:
+      labels:
+        app: test-385
+    spec:
+      containers:
+      - name: pause
+        image: registry.k8s.io/pause:3.9
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: test-dep-386
+  namespace: load-test-l
+spec:
+  replicas: 0
+  selector:
+    matchLabels:
+      app: test-386
+  template:
+    metadata:
+      labels:
+        app: test-386
+    spec:
+      containers:
+      - name: pause
+        image: registry.k8s.io/pause:3.9
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: test-dep-387
+  namespace: load-test-l
+spec:
+  replicas: 0
+  selector:
+    matchLabels:
+      app: test-387
+  template:
+    metadata:
+      labels:
+        app: test-387
+    spec:
+      containers:
+      - name: pause
+        image: registry.k8s.io/pause:3.9
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: test-dep-388
+  namespace: load-test-l
+spec:
+  replicas: 0
+  selector:
+    matchLabels:
+      app: test-388
+  template:
+    metadata:
+      labels:
+        app: test-388
+    spec:
+      containers:
+      - name: pause
+        image: registry.k8s.io/pause:3.9
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: test-dep-389
+  namespace: load-test-l
+spec:
+  replicas: 0
+  selector:
+    matchLabels:
+      app: test-389
+  template:
+    metadata:
+      labels:
+        app: test-389
+    spec:
+      containers:
+      - name: pause
+        image: registry.k8s.io/pause:3.9
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: test-dep-390
+  namespace: load-test-l
+spec:
+  replicas: 0
+  selector:
+    matchLabels:
+      app: test-390
+  template:
+    metadata:
+      labels:
+        app: test-390
+    spec:
+      containers:
+      - name: pause
+        image: registry.k8s.io/pause:3.9
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: test-dep-391
+  namespace: load-test-l
+spec:
+  replicas: 0
+  selector:
+    matchLabels:
+      app: test-391
+  template:
+    metadata:
+      labels:
+        app: test-391
+    spec:
+      containers:
+      - name: pause
+        image: registry.k8s.io/pause:3.9
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: test-dep-392
+  namespace: load-test-l
+spec:
+  replicas: 0
+  selector:
+    matchLabels:
+      app: test-392
+  template:
+    metadata:
+      labels:
+        app: test-392
+    spec:
+      containers:
+      - name: pause
+        image: registry.k8s.io/pause:3.9
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: test-dep-393
+  namespace: load-test-l
+spec:
+  replicas: 0
+  selector:
+    matchLabels:
+      app: test-393
+  template:
+    metadata:
+      labels:
+        app: test-393
+    spec:
+      containers:
+      - name: pause
+        image: registry.k8s.io/pause:3.9
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: test-dep-394
+  namespace: load-test-l
+spec:
+  replicas: 0
+  selector:
+    matchLabels:
+      app: test-394
+  template:
+    metadata:
+      labels:
+        app: test-394
+    spec:
+      containers:
+      - name: pause
+        image: registry.k8s.io/pause:3.9
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: test-dep-395
+  namespace: load-test-l
+spec:
+  replicas: 0
+  selector:
+    matchLabels:
+      app: test-395
+  template:
+    metadata:
+      labels:
+        app: test-395
+    spec:
+      containers:
+      - name: pause
+        image: registry.k8s.io/pause:3.9
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: test-dep-396
+  namespace: load-test-l
+spec:
+  replicas: 0
+  selector:
+    matchLabels:
+      app: test-396
+  template:
+    metadata:
+      labels:
+        app: test-396
+    spec:
+      containers:
+      - name: pause
+        image: registry.k8s.io/pause:3.9
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: test-dep-397
+  namespace: load-test-l
+spec:
+  replicas: 0
+  selector:
+    matchLabels:
+      app: test-397
+  template:
+    metadata:
+      labels:
+        app: test-397
+    spec:
+      containers:
+      - name: pause
+        image: registry.k8s.io/pause:3.9
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: test-dep-398
+  namespace: load-test-l
+spec:
+  replicas: 0
+  selector:
+    matchLabels:
+      app: test-398
+  template:
+    metadata:
+      labels:
+        app: test-398
+    spec:
+      containers:
+      - name: pause
+        image: registry.k8s.io/pause:3.9
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: test-dep-399
+  namespace: load-test-l
+spec:
+  replicas: 0
+  selector:
+    matchLabels:
+      app: test-399
+  template:
+    metadata:
+      labels:
+        app: test-399
+    spec:
+      containers:
+      - name: pause
+        image: registry.k8s.io/pause:3.9
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: test-dep-400
+  namespace: load-test-l
+spec:
+  replicas: 0
+  selector:
+    matchLabels:
+      app: test-400
+  template:
+    metadata:
+      labels:
+        app: test-400
+    spec:
+      containers:
+      - name: pause
+        image: registry.k8s.io/pause:3.9
+---

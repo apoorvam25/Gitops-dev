@@ -1,6 +1,5 @@
 #!/bin/bash
-# Usage: ./generate_load_optimized.sh <scale> <directory>
-# Scale options: S, M, L
+# Usage: ./generate_load_fixed.sh <scale> <directory>
 
 SCALE=$1
 DIR=$2
@@ -9,15 +8,29 @@ NAMESPACE="load-test-$NS_SUFFIX"
 
 mkdir -p $DIR
 
+# Define counts
 if [ "$SCALE" == "S" ]; then CM=100; SEC=100; DEP=20; fi
 if [ "$SCALE" == "M" ]; then CM=1000; SEC=1000; DEP=200; fi
 if [ "$SCALE" == "L" ]; then CM=10000; SEC=10000; DEP=2000; fi
 
-echo "Generating $SCALE load in $DIR..."
+# Batch Size (How many objects per file)
+BATCH_SIZE=100
+
+echo "Generating $SCALE load ($CM CMs, $SEC Secrets, $DEP Deps) in $DIR..."
+echo "Batching: $BATCH_SIZE objects per file."
+
+# Helper function to calculate batch file number
+get_batch_num() {
+  echo $(( ($1 - 1) / $BATCH_SIZE + 1 ))
+}
 
 # 1. Generate ConfigMaps
+echo "Generating ConfigMaps..."
 for i in $(seq 1 $CM); do
-cat <<EOF >> $DIR/temp-cm.yaml
+  BATCH=$(get_batch_num $i)
+  FILE="$DIR/configmaps-batch-$BATCH.yaml"
+  
+  cat <<EOF >> $FILE
 apiVersion: v1
 kind: ConfigMap
 metadata:
@@ -30,8 +43,12 @@ EOF
 done
 
 # 2. Generate Secrets
+echo "Generating Secrets..."
 for i in $(seq 1 $SEC); do
-cat <<EOF >> $DIR/temp-sec.yaml
+  BATCH=$(get_batch_num $i)
+  FILE="$DIR/secrets-batch-$BATCH.yaml"
+
+  cat <<EOF >> $FILE
 apiVersion: v1
 kind: Secret
 metadata:
@@ -45,8 +62,12 @@ EOF
 done
 
 # 3. Generate Deployments
+echo "Generating Deployments..."
 for i in $(seq 1 $DEP); do
-cat <<EOF >> $DIR/temp-dep.yaml
+  BATCH=$(get_batch_num $i)
+  FILE="$DIR/deployments-batch-$BATCH.yaml"
+
+  cat <<EOF >> $FILE
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -69,14 +90,4 @@ spec:
 EOF
 done
 
-# 4. Consolidate (FIXED: Adds .yaml extension)
-echo "Consolidating files..."
-# Split into chunks of 2000 lines (approx 100 objects)
-split -l 2000 --additional-suffix=.yaml $DIR/temp-cm.yaml $DIR/configmaps-
-split -l 2000 --additional-suffix=.yaml $DIR/temp-sec.yaml $DIR/secrets-
-split -l 2000 --additional-suffix=.yaml $DIR/temp-dep.yaml $DIR/deployments-
-
-# Cleanup temp files
-rm $DIR/temp-*.yaml
-
-echo "Done. Files generated in $DIR with .yaml extension."
+echo "✅ Done! Valid YAML files generated in $DIR"
