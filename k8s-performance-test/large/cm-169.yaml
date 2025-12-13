@@ -1,7 +1,0 @@
-apiVersion: v1
-kind: ConfigMap
-metadata:
-  name: test-cm-169
-  namespace: load-test-l
-data:
-  key: "value-169"

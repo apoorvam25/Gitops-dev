@@ -1,7 +1,0 @@
-apiVersion: v1
-kind: ConfigMap
-metadata:
-  name: test-cm-418
-  namespace: load-test-l
-data:
-  key: "value-418"

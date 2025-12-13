@@ -1,7 +1,0 @@
-apiVersion: v1
-kind: ConfigMap
-metadata:
-  name: test-cm-1364
-  namespace: load-test-l
-data:
-  key: "value-1364"

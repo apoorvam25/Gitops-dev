@@ -1,7 +1,0 @@
-apiVersion: v1
-kind: ConfigMap
-metadata:
-  name: test-cm-768
-  namespace: load-test-l
-data:
-  key: "value-768"

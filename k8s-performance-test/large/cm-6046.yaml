@@ -1,7 +1,0 @@
-apiVersion: v1
-kind: ConfigMap
-metadata:
-  name: test-cm-6046
-  namespace: load-test-l
-data:
-  key: "value-6046"
