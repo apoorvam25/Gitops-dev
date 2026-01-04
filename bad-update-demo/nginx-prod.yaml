@@ -4,7 +4,7 @@ metadata:
   name: nginx-prod
   namespace: recovery-test
 spec:
-  replicas: 5
+  replicas: 0
   selector:
     matchLabels:
       app: nginx
