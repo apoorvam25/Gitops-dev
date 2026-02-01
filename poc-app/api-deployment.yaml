@@ -22,7 +22,7 @@ spec:
         - -c
         - |
           # The loop ensures we don't 'finish' starting until the table exists
-          until psql -h pg-db -U postgres -d orders -c "SELECT 1 FROM orders LIMIT 1;"; do
+          until psql -h pg-db -U postgres -d postgres -c "SELECT 1 FROM orders LIMIT 1;"; do
             echo "Waiting for 'orders' table..."
             sleep 2
           done
@@ -38,12 +38,12 @@ spec:
         # It checks if the table still exists. If this fails, K8s stops sending traffic.
         readinessProbe:
           exec:
-            command: ["psql", "-h", "pg-db", "-U", "postgres", "-d", "orders", "-c", "SELECT 1;"]
+            command: ["psql", "-h", "pg-db", "-U", "postgres", "-d", "postgres", "-c", "SELECT 1;"]
           initialDelaySeconds: 5
           periodSeconds: 5
         # If this fails 3 times, K8s will KILL and RESTART the pod.
         livenessProbe:
           exec:
-            command: ["psql", "-h", "pg-db", "-U", "postgres", "-d", "orders", "-c", "SELECT 1;"]
+            command: ["psql", "-h", "pg-db", "-U", "postgres", "-d", "postgres", "-c", "SELECT 1;"]
           initialDelaySeconds: 15
           periodSeconds: 20
