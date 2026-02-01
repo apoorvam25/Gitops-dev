@@ -28,15 +28,14 @@ spec:
             secretKeyRef:
               name: pg-secret
               key: password
----
-apiVersion: v1
-kind: Service
-metadata:
-  name: pg-db
-  annotations:
-    argocd.argoproj.io/sync-wave: "0"
-spec:
-  selector:
-    app: postgres
-  ports:
-  - port: 5432
+        volumeMounts:
+        - name: pg-data
+          mountPath: /var/lib/postgresql/data
+  volumeClaimTemplates:
+  - metadata:
+      name: pg-data
+    spec:
+      accessModes: [ "ReadWriteOnce" ]
+      resources:
+        requests:
+          storage: 1Gi
