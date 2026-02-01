@@ -1,0 +1,28 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: schema-migrate-v2
+  annotations:
+    argocd.argoproj.io/sync-wave: "1"
+spec:
+  template:
+    spec:
+      containers:
+      - name: db-init
+        image: postgres:15
+        command:
+        - /bin/sh
+        - -c
+        - |
+          until pg_isready -h pg-db -U postgres; do
+            echo "Waiting for DB..."
+            sleep 2
+          done
+          psql -h pg-db -U postgres -c "CREATE TABLE orders (id INT);"
+        env:
+        - name: PGPASSWORD
+          valueFrom:
+            secretKeyRef:
+              name: pg-secret
+              key: password
+      restartPolicy: OnFailure
