@@ -1,0 +1,49 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: payment-api
+  annotations:
+    argocd.argoproj.io/sync-wave: "1"
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: payment-api
+  template:
+    metadata:
+      labels:
+        app: payment-api
+    spec:
+      containers:
+      - name: api-simulator
+        image: postgres:15
+        command:
+        - /bin/sh
+        - -c
+        - |
+          # The loop ensures we don't 'finish' starting until the table exists
+          until psql -h pg-db -U postgres -d orders -c "SELECT 1 FROM orders LIMIT 1;"; do
+            echo "Waiting for 'orders' table..."
+            sleep 2
+          done
+          echo "Table found! Starting application..."
+          # This represents the actual app running
+          sleep 3600 
+        env:
+        - name: PGPASSWORD
+          valueFrom:
+            secretKeyRef:
+              name: pg-secret
+              key: password
+        # It checks if the table still exists. If this fails, K8s stops sending traffic.
+        readinessProbe:
+          exec:
+            command: ["psql", "-h", "pg-db", "-U", "postgres", "-d", "orders", "-c", "SELECT 1;"]
+          initialDelaySeconds: 5
+          periodSeconds: 5
+        # If this fails 3 times, K8s will KILL and RESTART the pod.
+        livenessProbe:
+          exec:
+            command: ["psql", "-h", "pg-db", "-U", "postgres", "-d", "orders", "-c", "SELECT 1;"]
+          initialDelaySeconds: 15
+          periodSeconds: 20

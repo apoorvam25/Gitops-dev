@@ -1,0 +1,14 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: schema-migrate-v2
+  annotations:
+    argocd.argoproj.io/hook: PreSync
+spec:
+  template:
+    spec:
+      containers:
+      - name: db-init
+        image: postgres:15
+        command: ["psql", "-h", "pg-db", "-c", "CREATE TABLE orders (id INT);"]
+      restartPolicy: Never
