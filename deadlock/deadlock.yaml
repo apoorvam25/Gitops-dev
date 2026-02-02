@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: config-a
+  annotations:
+    argocd.argoproj.io/sync-wave: "1"
+data:
+  status: "waiting-for-b"
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: config-b
+  annotations:
+    argocd.argoproj.io/sync-wave: "2"
+data:
+  status: "ready"
