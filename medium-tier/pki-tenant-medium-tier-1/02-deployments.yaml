@@ -1,0 +1,256 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: workload-app-1
+  namespace: pki-tenant-medium-tier-1
+spec:
+  replicas: 11
+  selector:
+    matchLabels:
+      app: workload-app-1
+  template:
+    metadata:
+      labels:
+        app: workload-app-1
+    spec:
+      containers:
+      - name: app
+        image: nginx:latest
+
+        envFrom:
+        - configMapRef:
+            name: demo-cm-1
+        - secretRef:
+            name: demo-secret-1
+        resources:
+          limits:
+            cpu: "100m"
+            memory: "128Mi"
+          requests:
+            cpu: "50m"
+            memory: "64Mi"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: workload-app-2
+  namespace: pki-tenant-medium-tier-1
+spec:
+  replicas: 11
+  selector:
+    matchLabels:
+      app: workload-app-2
+  template:
+    metadata:
+      labels:
+        app: workload-app-2
+    spec:
+      containers:
+      - name: app
+        image: nginx:latest
+
+        envFrom:
+        - configMapRef:
+            name: demo-cm-1
+        - secretRef:
+            name: demo-secret-1
+        resources:
+          limits:
+            cpu: "100m"
+            memory: "128Mi"
+          requests:
+            cpu: "50m"
+            memory: "64Mi"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: workload-app-3
+  namespace: pki-tenant-medium-tier-1
+spec:
+  replicas: 11
+  selector:
+    matchLabels:
+      app: workload-app-3
+  template:
+    metadata:
+      labels:
+        app: workload-app-3
+    spec:
+      containers:
+      - name: app
+        image: nginx:latest
+
+        envFrom:
+        - configMapRef:
+            name: demo-cm-1
+        - secretRef:
+            name: demo-secret-1
+        resources:
+          limits:
+            cpu: "100m"
+            memory: "128Mi"
+          requests:
+            cpu: "50m"
+            memory: "64Mi"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: workload-app-4
+  namespace: pki-tenant-medium-tier-1
+spec:
+  replicas: 11
+  selector:
+    matchLabels:
+      app: workload-app-4
+  template:
+    metadata:
+      labels:
+        app: workload-app-4
+    spec:
+      containers:
+      - name: app
+        image: nginx:latest
+
+        envFrom:
+        - configMapRef:
+            name: demo-cm-1
+        - secretRef:
+            name: demo-secret-1
+        resources:
+          limits:
+            cpu: "100m"
+            memory: "128Mi"
+          requests:
+            cpu: "50m"
+            memory: "64Mi"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: workload-app-5
+  namespace: pki-tenant-medium-tier-1
+spec:
+  replicas: 11
+  selector:
+    matchLabels:
+      app: workload-app-5
+  template:
+    metadata:
+      labels:
+        app: workload-app-5
+    spec:
+      containers:
+      - name: app
+        image: nginx:latest
+
+        envFrom:
+        - configMapRef:
+            name: demo-cm-1
+        - secretRef:
+            name: demo-secret-1
+        resources:
+          limits:
+            cpu: "100m"
+            memory: "128Mi"
+          requests:
+            cpu: "50m"
+            memory: "64Mi"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: workload-app-6
+  namespace: pki-tenant-medium-tier-1
+spec:
+  replicas: 11
+  selector:
+    matchLabels:
+      app: workload-app-6
+  template:
+    metadata:
+      labels:
+        app: workload-app-6
+    spec:
+      containers:
+      - name: app
+        image: nginx:latest
+
+        envFrom:
+        - configMapRef:
+            name: demo-cm-1
+        - secretRef:
+            name: demo-secret-1
+        resources:
+          limits:
+            cpu: "100m"
+            memory: "128Mi"
+          requests:
+            cpu: "50m"
+            memory: "64Mi"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: workload-app-7
+  namespace: pki-tenant-medium-tier-1
+spec:
+  replicas: 11
+  selector:
+    matchLabels:
+      app: workload-app-7
+  template:
+    metadata:
+      labels:
+        app: workload-app-7
+    spec:
+      containers:
+      - name: app
+        image: nginx:latest
+
+        envFrom:
+        - configMapRef:
+            name: demo-cm-1
+        - secretRef:
+            name: demo-secret-1
+        resources:
+          limits:
+            cpu: "100m"
+            memory: "128Mi"
+          requests:
+            cpu: "50m"
+            memory: "64Mi"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: workload-app-8
+  namespace: pki-tenant-medium-tier-1
+spec:
+  replicas: 11
+  selector:
+    matchLabels:
+      app: workload-app-8
+  template:
+    metadata:
+      labels:
+        app: workload-app-8
+    spec:
+      containers:
+      - name: app
+        image: nginx:latest
+
+        envFrom:
+        - configMapRef:
+            name: demo-cm-1
+        - secretRef:
+            name: demo-secret-1
+        resources:
+          limits:
+            cpu: "100m"
+            memory: "128Mi"
+          requests:
+            cpu: "50m"
+            memory: "64Mi"
+---

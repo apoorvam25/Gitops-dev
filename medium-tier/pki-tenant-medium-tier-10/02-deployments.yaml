@@ -1,0 +1,224 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: workload-app-66
+  namespace: pki-tenant-medium-tier-10
+spec:
+  replicas: 11
+  selector:
+    matchLabels:
+      app: workload-app-66
+  template:
+    metadata:
+      labels:
+        app: workload-app-66
+    spec:
+      containers:
+      - name: app
+        image: hashicorp/http-echo:latest
+        args: ['-text=hello']
+        envFrom:
+        - configMapRef:
+            name: demo-cm-1
+        - secretRef:
+            name: demo-secret-1
+        resources:
+          limits:
+            cpu: "100m"
+            memory: "128Mi"
+          requests:
+            cpu: "50m"
+            memory: "64Mi"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: workload-app-67
+  namespace: pki-tenant-medium-tier-10
+spec:
+  replicas: 11
+  selector:
+    matchLabels:
+      app: workload-app-67
+  template:
+    metadata:
+      labels:
+        app: workload-app-67
+    spec:
+      containers:
+      - name: app
+        image: hashicorp/http-echo:latest
+        args: ['-text=hello']
+        envFrom:
+        - configMapRef:
+            name: demo-cm-1
+        - secretRef:
+            name: demo-secret-1
+        resources:
+          limits:
+            cpu: "100m"
+            memory: "128Mi"
+          requests:
+            cpu: "50m"
+            memory: "64Mi"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: workload-app-68
+  namespace: pki-tenant-medium-tier-10
+spec:
+  replicas: 11
+  selector:
+    matchLabels:
+      app: workload-app-68
+  template:
+    metadata:
+      labels:
+        app: workload-app-68
+    spec:
+      containers:
+      - name: app
+        image: hashicorp/http-echo:latest
+        args: ['-text=hello']
+        envFrom:
+        - configMapRef:
+            name: demo-cm-1
+        - secretRef:
+            name: demo-secret-1
+        resources:
+          limits:
+            cpu: "100m"
+            memory: "128Mi"
+          requests:
+            cpu: "50m"
+            memory: "64Mi"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: workload-app-69
+  namespace: pki-tenant-medium-tier-10
+spec:
+  replicas: 11
+  selector:
+    matchLabels:
+      app: workload-app-69
+  template:
+    metadata:
+      labels:
+        app: workload-app-69
+    spec:
+      containers:
+      - name: app
+        image: hashicorp/http-echo:latest
+        args: ['-text=hello']
+        envFrom:
+        - configMapRef:
+            name: demo-cm-1
+        - secretRef:
+            name: demo-secret-1
+        resources:
+          limits:
+            cpu: "100m"
+            memory: "128Mi"
+          requests:
+            cpu: "50m"
+            memory: "64Mi"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: workload-app-70
+  namespace: pki-tenant-medium-tier-10
+spec:
+  replicas: 11
+  selector:
+    matchLabels:
+      app: workload-app-70
+  template:
+    metadata:
+      labels:
+        app: workload-app-70
+    spec:
+      containers:
+      - name: app
+        image: hashicorp/http-echo:latest
+        args: ['-text=hello']
+        envFrom:
+        - configMapRef:
+            name: demo-cm-1
+        - secretRef:
+            name: demo-secret-1
+        resources:
+          limits:
+            cpu: "100m"
+            memory: "128Mi"
+          requests:
+            cpu: "50m"
+            memory: "64Mi"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: workload-app-71
+  namespace: pki-tenant-medium-tier-10
+spec:
+  replicas: 11
+  selector:
+    matchLabels:
+      app: workload-app-71
+  template:
+    metadata:
+      labels:
+        app: workload-app-71
+    spec:
+      containers:
+      - name: app
+        image: hashicorp/http-echo:latest
+        args: ['-text=hello']
+        envFrom:
+        - configMapRef:
+            name: demo-cm-1
+        - secretRef:
+            name: demo-secret-1
+        resources:
+          limits:
+            cpu: "100m"
+            memory: "128Mi"
+          requests:
+            cpu: "50m"
+            memory: "64Mi"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: workload-app-72
+  namespace: pki-tenant-medium-tier-10
+spec:
+  replicas: 11
+  selector:
+    matchLabels:
+      app: workload-app-72
+  template:
+    metadata:
+      labels:
+        app: workload-app-72
+    spec:
+      containers:
+      - name: app
+        image: hashicorp/http-echo:latest
+        args: ['-text=hello']
+        envFrom:
+        - configMapRef:
+            name: demo-cm-1
+        - secretRef:
+            name: demo-secret-1
+        resources:
+          limits:
+            cpu: "100m"
+            memory: "128Mi"
+          requests:
+            cpu: "50m"
+            memory: "64Mi"
+---
