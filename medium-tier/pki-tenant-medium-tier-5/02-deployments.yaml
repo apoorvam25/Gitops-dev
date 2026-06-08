@@ -4,7 +4,7 @@ metadata:
   name: workload-app-31
   namespace: pki-tenant-medium-tier-5
 spec:
-  replicas: 11
+  replicas: 4
   selector:
     matchLabels:
       app: workload-app-31
@@ -27,7 +27,7 @@ spec:
             cpu: "100m"
             memory: "64Mi"
           requests:
-            cpu: "10m"
+            cpu: "2m"
             memory: "32Mi"
 ---
 apiVersion: apps/v1
@@ -36,7 +36,7 @@ metadata:
   name: workload-app-32
   namespace: pki-tenant-medium-tier-5
 spec:
-  replicas: 11
+  replicas: 4
   selector:
     matchLabels:
       app: workload-app-32
@@ -59,7 +59,7 @@ spec:
             cpu: "100m"
             memory: "64Mi"
           requests:
-            cpu: "10m"
+            cpu: "2m"
             memory: "32Mi"
 ---
 apiVersion: apps/v1
@@ -68,7 +68,7 @@ metadata:
   name: workload-app-33
   namespace: pki-tenant-medium-tier-5
 spec:
-  replicas: 11
+  replicas: 4
   selector:
     matchLabels:
       app: workload-app-33
@@ -91,7 +91,7 @@ spec:
             cpu: "100m"
             memory: "64Mi"
           requests:
-            cpu: "10m"
+            cpu: "2m"
             memory: "32Mi"
 ---
 apiVersion: apps/v1
@@ -100,7 +100,7 @@ metadata:
   name: workload-app-34
   namespace: pki-tenant-medium-tier-5
 spec:
-  replicas: 11
+  replicas: 4
   selector:
     matchLabels:
       app: workload-app-34
@@ -123,7 +123,7 @@ spec:
             cpu: "100m"
             memory: "64Mi"
           requests:
-            cpu: "10m"
+            cpu: "2m"
             memory: "32Mi"
 ---
 apiVersion: apps/v1
@@ -132,7 +132,7 @@ metadata:
   name: workload-app-35
   namespace: pki-tenant-medium-tier-5
 spec:
-  replicas: 11
+  replicas: 4
   selector:
     matchLabels:
       app: workload-app-35
@@ -155,7 +155,7 @@ spec:
             cpu: "100m"
             memory: "64Mi"
           requests:
-            cpu: "10m"
+            cpu: "2m"
             memory: "32Mi"
 ---
 apiVersion: apps/v1
@@ -164,7 +164,7 @@ metadata:
   name: workload-app-36
   namespace: pki-tenant-medium-tier-5
 spec:
-  replicas: 11
+  replicas: 4
   selector:
     matchLabels:
       app: workload-app-36
@@ -187,7 +187,7 @@ spec:
             cpu: "100m"
             memory: "64Mi"
           requests:
-            cpu: "10m"
+            cpu: "2m"
             memory: "32Mi"
 ---
 apiVersion: apps/v1
@@ -196,7 +196,7 @@ metadata:
   name: workload-app-37
   namespace: pki-tenant-medium-tier-5
 spec:
-  replicas: 11
+  replicas: 4
   selector:
     matchLabels:
       app: workload-app-37
@@ -219,6 +219,6 @@ spec:
             cpu: "100m"
             memory: "64Mi"
           requests:
-            cpu: "10m"
+            cpu: "2m"
             memory: "32Mi"
 ---

@@ -4,7 +4,7 @@ metadata:
   name: workload-app-293
   namespace: pki-tenant-large-tier-20
 spec:
-  replicas: 19
+  replicas: 2
   selector:
     matchLabels:
       app: workload-app-293
@@ -36,7 +36,7 @@ metadata:
   name: workload-app-294
   namespace: pki-tenant-large-tier-20
 spec:
-  replicas: 19
+  replicas: 2
   selector:
     matchLabels:
       app: workload-app-294
@@ -68,7 +68,7 @@ metadata:
   name: workload-app-295
   namespace: pki-tenant-large-tier-20
 spec:
-  replicas: 19
+  replicas: 2
   selector:
     matchLabels:
       app: workload-app-295
@@ -100,7 +100,7 @@ metadata:
   name: workload-app-296
   namespace: pki-tenant-large-tier-20
 spec:
-  replicas: 19
+  replicas: 2
   selector:
     matchLabels:
       app: workload-app-296
@@ -132,7 +132,7 @@ metadata:
   name: workload-app-297
   namespace: pki-tenant-large-tier-20
 spec:
-  replicas: 19
+  replicas: 2
   selector:
     matchLabels:
       app: workload-app-297
@@ -164,7 +164,7 @@ metadata:
   name: workload-app-298
   namespace: pki-tenant-large-tier-20
 spec:
-  replicas: 19
+  replicas: 2
   selector:
     matchLabels:
       app: workload-app-298
@@ -196,7 +196,7 @@ metadata:
   name: workload-app-299
   namespace: pki-tenant-large-tier-20
 spec:
-  replicas: 19
+  replicas: 2
   selector:
     matchLabels:
       app: workload-app-299
@@ -228,7 +228,7 @@ metadata:
   name: workload-app-300
   namespace: pki-tenant-large-tier-20
 spec:
-  replicas: 19
+  replicas: 2
   selector:
     matchLabels:
       app: workload-app-300
@@ -260,7 +260,7 @@ metadata:
   name: workload-app-301
   namespace: pki-tenant-large-tier-20
 spec:
-  replicas: 19
+  replicas: 2
   selector:
     matchLabels:
       app: workload-app-301
@@ -292,7 +292,7 @@ metadata:
   name: workload-app-302
   namespace: pki-tenant-large-tier-20
 spec:
-  replicas: 19
+  replicas: 2
   selector:
     matchLabels:
       app: workload-app-302
@@ -324,7 +324,7 @@ metadata:
   name: workload-app-303
   namespace: pki-tenant-large-tier-20
 spec:
-  replicas: 19
+  replicas: 2
   selector:
     matchLabels:
       app: workload-app-303
@@ -356,7 +356,7 @@ metadata:
   name: workload-app-304
   namespace: pki-tenant-large-tier-20
 spec:
-  replicas: 19
+  replicas: 2
   selector:
     matchLabels:
       app: workload-app-304
@@ -388,7 +388,7 @@ metadata:
   name: workload-app-305
   namespace: pki-tenant-large-tier-20
 spec:
-  replicas: 19
+  replicas: 2
   selector:
     matchLabels:
       app: workload-app-305
@@ -420,7 +420,7 @@ metadata:
   name: workload-app-306
   namespace: pki-tenant-large-tier-20
 spec:
-  replicas: 19
+  replicas: 2
   selector:
     matchLabels:
       app: workload-app-306
@@ -452,7 +452,7 @@ metadata:
   name: workload-app-307
   namespace: pki-tenant-large-tier-20
 spec:
-  replicas: 19
+  replicas: 2
   selector:
     matchLabels:
       app: workload-app-307
