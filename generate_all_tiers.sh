@@ -13,14 +13,12 @@ generate_tier() {
     local TOTAL_DEPS=$3
     local REPLICAS_PER_DEP=$4
     local CONFIG_COUNT=$5
+    local CPU_REQUEST=$6   # Dynamically adjust CPU footprints to stay under GCP quota
     
     local TIER_DIR="${REPO_DIR}/${TIER_NAME}"
     mkdir -p "$TIER_DIR"
     
-    # Calculate image thresholds (90/10 split)
     local ECHO_THRESHOLD=$(( TOTAL_DEPS * 90 / 100 ))
-    
-    # Distribute deployments evenly across namespaces
     local DEPS_PER_NS=$(( TOTAL_DEPS / NS_COUNT ))
     local REMAINDER_DEPS=$(( TOTAL_DEPS % NS_COUNT ))
     
@@ -65,7 +63,7 @@ data:
 EOF
         done
 
-        # 3. Determine how many deployments go into this specific namespace
+        # 3. Determine deployment distribution
         local CURRENT_NS_DEPS=$DEPS_PER_NS
         if [ $NS_ID -le $REMAINDER_DEPS ]; then
             local CURRENT_NS_DEPS=$(( DEPS_PER_NS + 1 ))
@@ -82,7 +80,6 @@ EOF
             local IMAGE="nginx:latest"
             local ARGS_BLOCK=""
             
-            # Switch to http-echo for the last 10% of deployments
             if [ $DEPLOY_IDX -gt $ECHO_THRESHOLD ]; then
                 IMAGE="hashicorp/http-echo:latest"
                 ARGS_BLOCK="        args: ['-text=hello']"
@@ -116,23 +113,23 @@ $( [ ! -z "$ARGS_BLOCK" ] && echo "$ARGS_BLOCK" )
         resources:
           limits:
             cpu: "100m"
-            memory: "128Mi"
-          requests:
-            cpu: "50m"
             memory: "64Mi"
+          requests:
+            cpu: "${CPU_REQUEST}"
+            memory: "32Mi"
 ---
 EOF
             ((DEPLOY_IDX++))
             ((DEPS_CREATED++))
         done
     done
-    echo "Generated $TIER_NAME: $NS_COUNT Namespaces, $TOTAL_DEPS Deployments ($(( TOTAL_DEPS * REPLICAS_PER_DEP )) Pods)"
+    echo "Generated $TIER_NAME: $NS_COUNT Namespaces, $TOTAL_DEPS Deployments ($(( TOTAL_DEPS * REPLICAS_PER_DEP )) Pods) [CPU Request: $CPU_REQUEST]"
 }
 
-# Execute payload generation matching the spreadsheet specifications
-echo "Starting matrix payload generation..."
-generate_tier "small-tier" 5 25 6 10
-generate_tier "medium-tier" 10 72 11 14
-generate_tier "large-tier" 25 382 19 30
+echo "Starting matrix payload generation with optimized CPU profiles..."
+# Arguments: Name, Namespaces, Deployments, Replicas, Configs, CPU_Request
+generate_tier "small-tier" 5 25 6 10 "10m"
+generate_tier "medium-tier" 10 72 11 14 "10m"
+generate_tier "large-tier" 25 382 19 30 "2m"
 
-echo "Finished! Total payload tree structures written directly to ./${REPO_DIR}"
+echo "Finished! Updated payload tree structures written directly to ./${REPO_DIR}"

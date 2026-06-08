@@ -25,10 +25,10 @@ spec:
         resources:
           limits:
             cpu: "100m"
-            memory: "128Mi"
-          requests:
-            cpu: "50m"
             memory: "64Mi"
+          requests:
+            cpu: "10m"
+            memory: "32Mi"
 ---
 apiVersion: apps/v1
 kind: Deployment
@@ -57,10 +57,10 @@ spec:
         resources:
           limits:
             cpu: "100m"
-            memory: "128Mi"
-          requests:
-            cpu: "50m"
             memory: "64Mi"
+          requests:
+            cpu: "10m"
+            memory: "32Mi"
 ---
 apiVersion: apps/v1
 kind: Deployment
@@ -89,10 +89,10 @@ spec:
         resources:
           limits:
             cpu: "100m"
-            memory: "128Mi"
-          requests:
-            cpu: "50m"
             memory: "64Mi"
+          requests:
+            cpu: "10m"
+            memory: "32Mi"
 ---
 apiVersion: apps/v1
 kind: Deployment
@@ -121,10 +121,10 @@ spec:
         resources:
           limits:
             cpu: "100m"
-            memory: "128Mi"
-          requests:
-            cpu: "50m"
             memory: "64Mi"
+          requests:
+            cpu: "10m"
+            memory: "32Mi"
 ---
 apiVersion: apps/v1
 kind: Deployment
@@ -153,10 +153,10 @@ spec:
         resources:
           limits:
             cpu: "100m"
-            memory: "128Mi"
-          requests:
-            cpu: "50m"
             memory: "64Mi"
+          requests:
+            cpu: "10m"
+            memory: "32Mi"
 ---
 apiVersion: apps/v1
 kind: Deployment
@@ -185,10 +185,10 @@ spec:
         resources:
           limits:
             cpu: "100m"
-            memory: "128Mi"
-          requests:
-            cpu: "50m"
             memory: "64Mi"
+          requests:
+            cpu: "10m"
+            memory: "32Mi"
 ---
 apiVersion: apps/v1
 kind: Deployment
@@ -217,8 +217,8 @@ spec:
         resources:
           limits:
             cpu: "100m"
-            memory: "128Mi"
-          requests:
-            cpu: "50m"
             memory: "64Mi"
+          requests:
+            cpu: "10m"
+            memory: "32Mi"
 ---
