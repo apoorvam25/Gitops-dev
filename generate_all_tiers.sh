@@ -130,6 +130,6 @@ echo "Starting matrix payload generation with optimized CPU profiles..."
 # Arguments: Name, Namespaces, Deployments, Replicas, Configs, CPU_Request
 generate_tier "small-tier" 5 25 6 10 "2m"
 generate_tier "medium-tier" 10 72 4 14 "2m"
-generate_tier "large-tier" 25 382 2 30 "2m"
+generate_tier "large-tier" 25 382 1 30 "2m"
 
 echo "Finished! Updated payload tree structures written directly to ./${REPO_DIR}"
