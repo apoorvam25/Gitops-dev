@@ -28,7 +28,7 @@ spec:
             memory: "64Mi"
           requests:
             cpu: "2m"
-            memory: "32Mi"
+            memory: "16Mi"
 ---
 apiVersion: apps/v1
 kind: Deployment
@@ -60,7 +60,7 @@ spec:
             memory: "64Mi"
           requests:
             cpu: "2m"
-            memory: "32Mi"
+            memory: "16Mi"
 ---
 apiVersion: apps/v1
 kind: Deployment
@@ -92,7 +92,7 @@ spec:
             memory: "64Mi"
           requests:
             cpu: "2m"
-            memory: "32Mi"
+            memory: "16Mi"
 ---
 apiVersion: apps/v1
 kind: Deployment
@@ -124,7 +124,7 @@ spec:
             memory: "64Mi"
           requests:
             cpu: "2m"
-            memory: "32Mi"
+            memory: "16Mi"
 ---
 apiVersion: apps/v1
 kind: Deployment
@@ -156,7 +156,7 @@ spec:
             memory: "64Mi"
           requests:
             cpu: "2m"
-            memory: "32Mi"
+            memory: "16Mi"
 ---
 apiVersion: apps/v1
 kind: Deployment
@@ -188,7 +188,7 @@ spec:
             memory: "64Mi"
           requests:
             cpu: "2m"
-            memory: "32Mi"
+            memory: "16Mi"
 ---
 apiVersion: apps/v1
 kind: Deployment
@@ -220,7 +220,7 @@ spec:
             memory: "64Mi"
           requests:
             cpu: "2m"
-            memory: "32Mi"
+            memory: "16Mi"
 ---
 apiVersion: apps/v1
 kind: Deployment
@@ -252,7 +252,7 @@ spec:
             memory: "64Mi"
           requests:
             cpu: "2m"
-            memory: "32Mi"
+            memory: "16Mi"
 ---
 apiVersion: apps/v1
 kind: Deployment
@@ -284,7 +284,7 @@ spec:
             memory: "64Mi"
           requests:
             cpu: "2m"
-            memory: "32Mi"
+            memory: "16Mi"
 ---
 apiVersion: apps/v1
 kind: Deployment
@@ -316,7 +316,7 @@ spec:
             memory: "64Mi"
           requests:
             cpu: "2m"
-            memory: "32Mi"
+            memory: "16Mi"
 ---
 apiVersion: apps/v1
 kind: Deployment
@@ -348,7 +348,7 @@ spec:
             memory: "64Mi"
           requests:
             cpu: "2m"
-            memory: "32Mi"
+            memory: "16Mi"
 ---
 apiVersion: apps/v1
 kind: Deployment
@@ -380,7 +380,7 @@ spec:
             memory: "64Mi"
           requests:
             cpu: "2m"
-            memory: "32Mi"
+            memory: "16Mi"
 ---
 apiVersion: apps/v1
 kind: Deployment
@@ -412,7 +412,7 @@ spec:
             memory: "64Mi"
           requests:
             cpu: "2m"
-            memory: "32Mi"
+            memory: "16Mi"
 ---
 apiVersion: apps/v1
 kind: Deployment
@@ -444,7 +444,7 @@ spec:
             memory: "64Mi"
           requests:
             cpu: "2m"
-            memory: "32Mi"
+            memory: "16Mi"
 ---
 apiVersion: apps/v1
 kind: Deployment
@@ -476,7 +476,7 @@ spec:
             memory: "64Mi"
           requests:
             cpu: "2m"
-            memory: "32Mi"
+            memory: "16Mi"
 ---
 apiVersion: apps/v1
 kind: Deployment
@@ -508,5 +508,5 @@ spec:
             memory: "64Mi"
           requests:
             cpu: "2m"
-            memory: "32Mi"
+            memory: "16Mi"
 ---

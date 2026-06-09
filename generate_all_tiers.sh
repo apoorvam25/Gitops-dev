@@ -116,7 +116,7 @@ $( [ ! -z "$ARGS_BLOCK" ] && echo "$ARGS_BLOCK" )
             memory: "64Mi"
           requests:
             cpu: "${CPU_REQUEST}"
-            memory: "32Mi"
+            memory: "16Mi"
 ---
 EOF
             ((DEPLOY_IDX++))
